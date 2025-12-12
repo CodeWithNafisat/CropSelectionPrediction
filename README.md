@@ -1,6 +1,6 @@
-#🌾 Intelligent Crop Recommendation System> **Bridging the gap between agricultural science and artificial intelligence.**
+🌾 Intelligent Crop Recommendation System> **Bridging the gap between agricultural science and artificial intelligence.**
 
-##📖 Table of Contents* [Problem Statement](https://www.google.com/search?q=%23-problem-statement)
+📖 Table of Contents* [Problem Statement](https://www.google.com/search?q=%23-problem-statement)
 * [What the App Does](https://www.google.com/search?q=%23-what-the-app-does)
 * [Our Solution](https://www.google.com/search?q=%23-solution)
 * [Challenges We Overcame](https://www.google.com/search?q=%23-challenges)
@@ -10,7 +10,7 @@
 
 ---
 
-##🚩 Problem StatementAgriculture is increasingly becoming data-driven, yet many farmers and agricultural planners lack accessible tools to interpret complex soil and climate data. Choosing the wrong crop for specific environmental conditions can lead to:
+🚩 Problem StatementAgriculture is increasingly becoming data-driven, yet many farmers and agricultural planners lack accessible tools to interpret complex soil and climate data. Choosing the wrong crop for specific environmental conditions can lead to:
 
 * **Reduced yields** and financial loss.
 * **Soil degradation** due to nutrient imbalance.
@@ -20,13 +20,13 @@ Traditional methods often rely on intuition or generic guidelines that don't acc
 
 ---
 
-##📱 What the App DoesThis application is an **interactive decision-support tool** that recommends the most suitable crop to grow based on specific environmental parameters.
+📱 What the App DoesThis application is an **interactive decision-support tool** that recommends the most suitable crop to grow based on specific environmental parameters.
 
 It goes beyond simple prediction by offering **Explainable AI (XAI)**. It doesn't just tell the user *what* to grow; it explains *why* that recommendation was made, breaking down the biological impact of each soil nutrient and weather condition on the decision.
 
 ---
 
-##💡 SolutionWe built a deep learning classification system wrapped in a user-friendly interface.
+💡 SolutionWe built a deep learning classification system wrapped in a user-friendly interface.
 
 1. **Deep Learning Core:** Utilizes a custom PyTorch Feed-Forward Neural Network to analyze patterns across 7 different agricultural features.
 2. **Interactive Dashboard:** A Streamlit-based UI allows users to easily input soil data via sliders and receive instant feedback.
@@ -34,7 +34,7 @@ It goes beyond simple prediction by offering **Explainable AI (XAI)**. It doesn'
 
 ---
 
-##🧗 ChallengesBuilding this system came with specific hurdles:
+🧗 ChallengesBuilding this system came with specific hurdles:
 
 * **Model Explainability:** Deep learning models are often "black boxes." Implementing SHAP to translate complex tensor calculations into human-readable biological insights was a key technical challenge.
 * **User Experience (UX):** Designing a "Smart Reset" feature to ensure old predictions don't persist when inputs change required implementing custom session state callbacks in Streamlit.
@@ -42,7 +42,7 @@ It goes beyond simple prediction by offering **Explainable AI (XAI)**. It doesn'
 
 ---
 
-##🛠 Technologies & RequirementsThis project is built using the following stack:
+🛠 Technologies & RequirementsThis project is built using the following stack:
 
 | Category | Technology |
 | --- | --- |
@@ -58,9 +58,9 @@ To run this project, you will need the specific libraries listed in `requirement
 
 ---
 
-##🚀 How to UseFollow these steps to get the app running on your local machine.
+🚀 How to UseFollow these steps to get the app running on your local machine.
 
-###1. Clone the RepositoryOpen your terminal and run:
+1. Clone the RepositoryOpen your terminal and run:
 
 ```bash
 git clone https://github.com/CodeWithNafisat/Crop-Recommendation-System.git
@@ -68,12 +68,12 @@ cd Crop-Recommendation-System
 
 ```
 
-###2. Create a Virtual Environment (Optional but Recommended)```bash
-# Windows
+2. Create a Virtual Environment (Optional but Recommended)```bash
+Windows
 python -m venv venv
 venv\Scripts\activate
 
-# Mac/Linux
+Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
 
@@ -86,17 +86,17 @@ pip install -r requirements.txt
 
 *(Note: Ensure you have `best_model.pth`, `scaler.pkl`, `le.pkl`, and `bg.csv` in the root directory).*
 
-###4. Run the Application```bash
+4. Run the Application```bash
 streamlit run app.py
 
 ```
 
-###5. Access the AppThe app will automatically open in your default web browser at:
+5. Access the AppThe app will automatically open in your default web browser at:
 `http://localhost:8501`
 
 ---
 
-##👩‍💻 About Me**Nafisat Abdulraheem**
+👩‍💻 About Me**Nafisat Abdulraheem**
 
 I'm passionate about data science and machine learning, and I focus on building AI tools that are actually useful and understandable for real people solving real problems.
 
@@ -105,4 +105,4 @@ I'm passionate about data science and machine learning, and I focus on building 
 
 ---
 
-##📄 LicenseThis project uses the **MIT License**. Check the LICENSE file for details.
+📄 LicenseThis project uses the **MIT License**. Check the LICENSE file for details.
