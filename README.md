@@ -32,7 +32,7 @@ Traditional approaches often rely on intuition or generic guidelines, ignoring t
 
 This **interactive decision-support tool** recommends the most suitable crop to grow based on your soil and environmental data.
 
-![App Dashboard Interface](assets/Dashboard.png)
+![App Dashboard Interface](crop_screenshot/Dashboard.png)
 
 Beyond simple predictions, the app uses **Explainable AI (XAI)** to show *why* a particular crop is recommended, highlighting the biological and environmental impact of each factor.
 
@@ -46,7 +46,7 @@ I developed a **deep learning-based classification system** with a user-friendly
 2. **Interactive Dashboard:** Built with Streamlit, it allows users to input soil and climate data via sliders and receive instant, interpretable recommendations.
 3. **Transparency with SHAP:** SHAP values visualize feature importance, explaining, for example, *“High rainfall positively influenced the recommendation for Rice.”*
 
-![SHAP Explanation Feature](assets/Explainable A1.png)
+![App Dashboard Interface](crop_screenshot/Explainable A1.png)
 
 ---
 
