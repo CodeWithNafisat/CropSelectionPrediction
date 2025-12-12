@@ -1,114 +1,133 @@
 🌾 Intelligent Crop Recommendation System
-**Bridging the gap between agricultural science and artificial intelligence.**
 
-📖 Table of Contents
-* [Problem Statement](https://www.google.com/search?q=%23-problem-statement)
-* [What the App Does](https://www.google.com/search?q=%23-what-the-app-does)
-* [MY Solution](https://www.google.com/search?q=%23-solution)
-* [Challenges We Overcame](https://www.google.com/search?q=%23-challenges)
-* [Technologies Used](https://www.google.com/search?q=%23-technologies--requirements)
-* [How to Run Locally](https://www.google.com/search?q=%23-how-to-use)
-* [About Me](https://www.google.com/search?q=%23-about-me)
+**Bringing the power of Artificial Intelligence to agriculture.**
 
 ---
 
-🚩 Problem Statement:
-Agriculture is increasingly becoming data-driven, yet many farmers and agricultural planners lack accessible tools to interpret complex soil and climate data. Choosing the wrong crop for specific environmental conditions can lead to:
+## 📖 Table of Contents
 
-* **Reduced yields** and financial loss.
-* **Soil degradation** due to nutrient imbalance.
-* **Inefficient resource usage** (water and fertilizers).
-
-Traditional methods often rely on intuition or generic guidelines that don't account for the subtle interactions between soil nutrients (N, P, K) and climatic factors.
-
----
-
-📱 What the App Does:
-This application is an **interactive decision-support tool** that recommends the most suitable crop to grow based on specific environmental parameters.
-
-It goes beyond simple prediction by offering **Explainable AI (XAI)**. It doesn't just tell the user *what* to grow; it explains *why* that recommendation was made, breaking down the biological impact of each soil nutrient and weather condition on the decision.
+* [Problem Statement](#problem-statement)
+* [What the App Does](#what-the-app-does)
+* [Solution](#solution)
+* [Challenges We Overcame](#challenges-we-overcame)
+* [Technologies & Requirements](#technologies--requirements)
+* [How to Run Locally](#how-to-run-locally)
+* [About Me](#about-me)
 
 ---
 
-💡 Solution:
-I built a deep learning classification system wrapped in a user-friendly interface.
+## 🚩 Problem Statement
 
-1. **Deep Learning Core:** Utilizes a custom PyTorch Feed-Forward Neural Network to analyze patterns across 7 different agricultural features.
-2. **Interactive Dashboard:** A Streamlit-based UI allows users to easily input soil data via sliders and receive instant feedback.
-3. **Transparency:** Integrated **SHAP (SHapley Additive exPlanations)** values to visualize feature importance. The app generates dynamic text explaining how factors like Nitrogen levels or Rainfall specifically influenced the model's choice (e.g., *"High rainfall positively influenced the recommendation for Rice"*).
+Agriculture is becoming increasingly data-driven, yet many farmers and planners lack easy-to-use tools to interpret complex soil and climate information. Selecting the wrong crop for a given environment can result in:
 
----
+* **Lower yields** and financial losses.
+* **Soil degradation** due to nutrient imbalances.
+* **Inefficient resource use**, including water and fertilizers.
 
-🧗 Challenges:
-Building this system came with specific hurdles:
-
-* **Model Explainability:** Deep learning models are often "black boxes." Implementing SHAP to translate complex tensor calculations into human-readable biological insights was a key technical challenge.
-* **User Experience (UX):** Designing a "Smart Reset" feature to ensure old predictions don't persist when inputs change required implementing custom session state callbacks in Streamlit.
-* **Data Balancing:** ensuring the model didn't favor common crops over niche ones required careful data preprocessing and scaling.
+Traditional approaches often rely on intuition or generic guidelines, ignoring the subtle interplay between soil nutrients (N, P, K) and climatic factors.
 
 ---
 
-🛠 Technologies & RequirementsThis project is built using the following stack:
+## 📱 What the App Does
 
-| Category | Technology |
-| --- | --- |
-| **Language** | Python 3.x |
-| **Frontend** | Streamlit |
-| **Deep Learning** | PyTorch (`torch`, `torch.nn`) |
-| **Data Processing** | Pandas, NumPy, Scikit-learn |
-| **Explainability** | SHAP (SHapley Additive exPlanations) |
-| **Visualization** | Matplotlib, Seaborn |
+This **interactive decision-support tool** recommends the most suitable crop to grow based on your soil and environmental data.
 
-**Dependencies:**
-To run this project, you will need the specific libraries listed in `requirements.txt`.
+![App Dashboard Interface](assets/Dashboard.png)
+
+Beyond simple predictions, the app uses **Explainable AI (XAI)** to show *why* a particular crop is recommended, highlighting the biological and environmental impact of each factor.
 
 ---
 
-🚀 How to UseFollow these steps to get the app running on your local machine.
+## 💡 Solution
 
-1. Clone the RepositoryOpen your terminal and run:
+I developed a **deep learning-based classification system** with a user-friendly interface:
+
+1. **Deep Learning Core:** A custom PyTorch Feed-Forward Neural Network analyzes patterns across 7 key agricultural features.
+2. **Interactive Dashboard:** Built with Streamlit, it allows users to input soil and climate data via sliders and receive instant, interpretable recommendations.
+3. **Transparency with SHAP:** SHAP values visualize feature importance, explaining, for example, *“High rainfall positively influenced the recommendation for Rice.”*
+
+![SHAP Explanation Feature](assets/Explainable A1.png)
+
+---
+
+## 🧗 Challenges We Overcame
+
+Developing this system involved solving several technical and design challenges:
+
+* **Model Explainability:** Translating deep learning predictions into human-understandable insights with SHAP.
+* **User Experience:** Implementing a “Smart Reset” to prevent old predictions from persisting when inputs change.
+* **Data Balancing:** Ensuring the model fairly represents both common and niche crops through careful preprocessing and scaling.
+
+---
+
+## 🛠 Technologies & Requirements
+
+| Category            | Technology                           |
+| ------------------- | ------------------------------------ |
+| **Language**        | Python 3.x                           |
+| **Frontend**        | Streamlit                            |
+| **Deep Learning**   | PyTorch (`torch`, `torch.nn`)        |
+| **Data Processing** | Pandas, NumPy, Scikit-learn          |
+| **Explainability**  | SHAP (SHapley Additive exPlanations) |
+| **Visualization**   | Matplotlib, Seaborn                  |
+
+**Dependencies:** All required packages are listed in `requirements.txt`.
+
+---
+
+## 🚀 How to Run Locally
+
+Follow these steps to get the app running on your machine:
+
+1. **Clone the Repository**
 
 ```bash
 git clone https://github.com/CodeWithNafisat/Crop-Recommendation-System.git
 cd Crop-Recommendation-System
-
 ```
 
-2. Create a Virtual Environment (Optional but Recommended)```bash
-Windows
+2. **Create a Virtual Environment (Recommended)**
+
+```bash
+# Windows
 python -m venv venv
 venv\Scripts\activate
 
-Mac/Linux
+# Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
-
 ```
 
-###3. Install Dependencies```bash
+3. **Install Dependencies**
+
+```bash
 pip install -r requirements.txt
-
 ```
 
-*(Note: Ensure you have `best_model.pth`, `scaler.pkl`, `le.pkl`, and `bg.csv` in the root directory).*
+> Ensure the files `best_model.pth`, `scaler.pkl`, `le.pkl`, and `bg.csv` are in the project root.
 
-4. Run the Application```bash
+4. **Run the App**
+
+```bash
 streamlit run app.py
-
 ```
 
-5. Access the AppThe app will automatically open in your default web browser at:
-`http://localhost:8501`
+5. **Access the App**
+   Open your browser at: `http://localhost:8501`
 
 ---
 
-👩‍💻 About Me**Nafisat Abdulraheem**
+## 👩‍💻 About Me
 
-I'm passionate about data science and machine learning, and I focus on building AI tools that are actually useful and understandable for real people solving real problems.
+**Nafisat Abdulraheem** – passionate about building **AI tools that are practical, interpretable, and impactful**.
 
 * **GitHub:** [CodeWithNafisat](https://github.com/CodeWithNafisat)
 * **LinkedIn:** [Nafisat Abdulraheem](https://www.linkedin.com/in/nafisat-abdulraheem-7a193b337)
 
 ---
 
-📄 LicenseThis project uses the **MIT License**. Check the LICENSE file for details.
+## 📄 License
+
+This project is licensed under the **MIT License** – see the LICENSE file for details.
+
+---
