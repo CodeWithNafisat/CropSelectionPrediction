@@ -1,9 +1,10 @@
-🌾 Intelligent Crop Recommendation System> **Bridging the gap between agricultural science and artificial intelligence.**
+🌾 Intelligent Crop Recommendation System
+**Bridging the gap between agricultural science and artificial intelligence.**
 
 📖 Table of Contents
 * [Problem Statement](https://www.google.com/search?q=%23-problem-statement)
 * [What the App Does](https://www.google.com/search?q=%23-what-the-app-does)
-* [Our Solution](https://www.google.com/search?q=%23-solution)
+* [MY Solution](https://www.google.com/search?q=%23-solution)
 * [Challenges We Overcame](https://www.google.com/search?q=%23-challenges)
 * [Technologies Used](https://www.google.com/search?q=%23-technologies--requirements)
 * [How to Run Locally](https://www.google.com/search?q=%23-how-to-use)
@@ -29,7 +30,8 @@ It goes beyond simple prediction by offering **Explainable AI (XAI)**. It doesn'
 
 ---
 
-💡 SolutionWe built a deep learning classification system wrapped in a user-friendly interface.
+💡 Solution:
+I built a deep learning classification system wrapped in a user-friendly interface.
 
 1. **Deep Learning Core:** Utilizes a custom PyTorch Feed-Forward Neural Network to analyze patterns across 7 different agricultural features.
 2. **Interactive Dashboard:** A Streamlit-based UI allows users to easily input soil data via sliders and receive instant feedback.
