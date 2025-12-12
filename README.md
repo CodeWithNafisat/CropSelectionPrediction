@@ -9,7 +9,7 @@
 * [Problem Statement](#problem-statement)
 * [What the App Does](#what-the-app-does)
 * [Solution](#solution)
-* [Challenges We Overcame](#challenges-we-overcame)
+* [Challenges I Overcame](#challenges-we-overcame)
 * [Technologies & Requirements](#technologies--requirements)
 * [How to Run Locally](#how-to-run-locally)
 * [About Me](#about-me)
@@ -46,11 +46,12 @@ I developed a **deep learning-based classification system** with a user-friendly
 2. **Interactive Dashboard:** Built with Streamlit, it allows users to input soil and climate data via sliders and receive instant, interpretable recommendations.
 3. **Transparency with SHAP:** SHAP values visualize feature importance, explaining, for example, *“High rainfall positively influenced the recommendation for Rice.”*
 
-![App Dashboard Interface](crop_screenshot/Explainable A1.png)
+![App Dashboard Interface](crop_screenshot/ExplainableA1.png)
+![App Dashboard Interface](crop_screenshot/ExplainableA2.png)
 
 ---
 
-## 🧗 Challenges We Overcame
+## 🧗 Challenges I Overcame
 
 Developing this system involved solving several technical and design challenges:
 
