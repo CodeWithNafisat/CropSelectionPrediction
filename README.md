@@ -1,6 +1,7 @@
 🌾 Intelligent Crop Recommendation System> **Bridging the gap between agricultural science and artificial intelligence.**
 
-📖 Table of Contents* [Problem Statement](https://www.google.com/search?q=%23-problem-statement)
+📖 Table of Contents
+* [Problem Statement](https://www.google.com/search?q=%23-problem-statement)
 * [What the App Does](https://www.google.com/search?q=%23-what-the-app-does)
 * [Our Solution](https://www.google.com/search?q=%23-solution)
 * [Challenges We Overcame](https://www.google.com/search?q=%23-challenges)
@@ -10,7 +11,8 @@
 
 ---
 
-🚩 Problem StatementAgriculture is increasingly becoming data-driven, yet many farmers and agricultural planners lack accessible tools to interpret complex soil and climate data. Choosing the wrong crop for specific environmental conditions can lead to:
+🚩 Problem Statement:
+Agriculture is increasingly becoming data-driven, yet many farmers and agricultural planners lack accessible tools to interpret complex soil and climate data. Choosing the wrong crop for specific environmental conditions can lead to:
 
 * **Reduced yields** and financial loss.
 * **Soil degradation** due to nutrient imbalance.
@@ -20,7 +22,8 @@ Traditional methods often rely on intuition or generic guidelines that don't acc
 
 ---
 
-📱 What the App DoesThis application is an **interactive decision-support tool** that recommends the most suitable crop to grow based on specific environmental parameters.
+📱 What the App Does:
+This application is an **interactive decision-support tool** that recommends the most suitable crop to grow based on specific environmental parameters.
 
 It goes beyond simple prediction by offering **Explainable AI (XAI)**. It doesn't just tell the user *what* to grow; it explains *why* that recommendation was made, breaking down the biological impact of each soil nutrient and weather condition on the decision.
 
@@ -34,7 +37,8 @@ It goes beyond simple prediction by offering **Explainable AI (XAI)**. It doesn'
 
 ---
 
-🧗 ChallengesBuilding this system came with specific hurdles:
+🧗 Challenges:
+Building this system came with specific hurdles:
 
 * **Model Explainability:** Deep learning models are often "black boxes." Implementing SHAP to translate complex tensor calculations into human-readable biological insights was a key technical challenge.
 * **User Experience (UX):** Designing a "Smart Reset" feature to ensure old predictions don't persist when inputs change required implementing custom session state callbacks in Streamlit.
