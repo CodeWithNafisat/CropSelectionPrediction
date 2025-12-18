@@ -186,7 +186,7 @@ def sidebar_input_features():
 
 # Load resources
 model, scaler, le = load_artifacts()
-background_data, feature_names = get_shap_background('bg.csv')
+background_data, feature_names = get_shap_background('Crop/bg.csv')
 feature_desc = get_feature_descriptions()
 
 # --- 6. Main Interface ---
