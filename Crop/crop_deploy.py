@@ -52,18 +52,19 @@ class ClassificationModel(nn.Module):
 @st.cache_resource
 def load_artifacts():
     try:
-        scaler = joblib.load('scaler.pkl')
-        le = joblib.load('le.pkl')
+        scaler = joblib.load('Crop/scaler.pkl')
+        le = joblib.load('Crop/le.pkl')
         model = ClassificationModel(output_target=len(le.classes_))
-        model.load_state_dict(torch.load('best_model.pth'))
+        model.load_state_dict(torch.load('Crop/best_model.pth'))
         model.eval()
         return model, scaler, le
     except FileNotFoundError as e:
-        st.error(f"Error loading files: {e}. Ensure 'best_model.pth', 'scaler.pkl', and 'le.pkl' exist.")
+        st.error(f"Error loading files: {e}. Ensure 'Crop/best_model.pth', 'Crop/scaler.pkl', and 'Crop/le.pkl' exist.")
         return None, None, None
 
+
 @st.cache_data
-def get_shap_background(csv_path='bg.csv'):
+def get_shap_background(csv_path='Crop/bg.csv'):
     """Load background data for SHAP"""
     try:
         df = pd.read_csv(csv_path)
