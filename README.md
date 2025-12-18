@@ -2,17 +2,6 @@
 
 **Bringing the power of Artificial Intelligence to agriculture.**
 
----
-
-## 📖 Table of Contents
-
-* [Problem Statement](#problem-statement)
-* [What the App Does](#what-the-app-does)
-* [Solution](#solution)
-* [Challenges I Overcame](#challenges-we-overcame)
-* [Technologies & Requirements](#technologies--requirements)
-* [How to Run Locally](#how-to-run-locally)
-* [About Me](#about-me)
 
 ---
 
