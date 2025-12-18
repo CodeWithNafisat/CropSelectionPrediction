@@ -72,12 +72,8 @@ def get_shap_background(csv_path='Crop/bg.csv'):
         for col in num_cols:
             df[col] = winsorize(df[col], limits=[0.075, 0.075])
         
-        if 'label' in df.columns:
-            X = df.drop('label', axis=1).values
-        else:
-            X = df.values
             
-        scaler = joblib.load('scaler.pkl')
+        scaler = joblib.load('Crop/scaler.pkl')
         X_scaled = scaler.transform(X)
         background = X_scaled[:100].astype(np.float32)
         return background, df.columns.drop('label') if 'label' in df.columns else df.columns
