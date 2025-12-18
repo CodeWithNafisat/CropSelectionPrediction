@@ -67,19 +67,32 @@ def load_artifacts():
 def get_shap_background(csv_path='Crop/bg.csv'):
     """Load background data for SHAP"""
     try:
+        # Load background CSV from Crop folder
         df = pd.read_csv(csv_path)
+        
+        # Select numeric columns and winsorize
         num_cols = df.select_dtypes(include=['int', 'float']).columns
         for col in num_cols:
             df[col] = winsorize(df[col], limits=[0.075, 0.075])
         
-            
+        # Prepare features for SHAP
+        if 'label' in df.columns:
+            X = df.drop('label', axis=1).values
+        else:
+            X = df.values
+        
+        # Scale using the scaler in Crop folder
         scaler = joblib.load('Crop/scaler.pkl')
         X_scaled = scaler.transform(X)
+        
+        # Take first 100 rows as SHAP background
         background = X_scaled[:100].astype(np.float32)
-        return background, df.columns.drop('label') if 'label' in df.columns else df.columns
+        feature_names = df.columns.drop('label') if 'label' in df.columns else df.columns
+        return background, feature_names
     except Exception as e:
         st.warning(f"Could not load background data for SHAP: {e}")
         return None, None
+
 
 # --- 5. Feature Data & Sidebar Logic ---
 
